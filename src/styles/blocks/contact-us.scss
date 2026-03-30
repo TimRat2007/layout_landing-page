@@ -2,7 +2,11 @@
   @include page-grid;
 
   &__text {
-    grid-column: 4 / -1;
+    grid-column: 1 / -1;
+
+    @include on-desktop {
+      grid-column: 8 / 12;
+    }
   }
   &__title {
     grid-column: 1 / -1;
@@ -14,7 +18,12 @@
     @include on-tablet {
       grid-column: 1 / 4;
     }
+
+    @include on-desktop {
+      grid-column: span 5;
+    }
   }
+
   &__form {
     display: grid;
     row-gap: 20px;
@@ -29,6 +38,16 @@
       border-radius: 40px;
       font-weight: 700;
       border: none;
+
+      &:hover {
+        background: #fff;
+        box-shadow: 1px 4px 16px 0 rgba(232, 232, 240, 0.4);
+      }
+
+      &:focus {
+        background: #fff;
+        box-shadow: 1px 4px 16px 0 rgba(232, 232, 240, 0.64);
+      }
     }
 
     &__fill {
@@ -48,6 +67,16 @@
         color: #7e7e83;
         font-size: 14px;
         border: none;
+
+        &:focus {
+          outline: none;
+          color: #1d1d1d;
+        }
+      }
+
+      &:focus {
+        outline: none;
+        color: #1d1d1d;
       }
     }
   }
@@ -63,6 +92,16 @@
     height: 56px;
     border-radius: 40px;
     border: none;
+
+    &:hover {
+      background: #fff;
+      box-shadow: 1px 4px 16px 0 rgba(232, 232, 240, 0.4);
+    }
+
+    &:focus {
+      background: #fff;
+      box-shadow: 1px 4px 16px 0 rgba(232, 232, 240, 0.64);
+    }
 
     @include on-tablet {
       grid-column: 2 / 6;

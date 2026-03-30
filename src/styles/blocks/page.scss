@@ -5,7 +5,7 @@
   line-height: 140%;
   scroll-behavior: smooth;
   &:has(.page__menu:target) {
-    overflow: hidden; /* запретить скролл страницы */
+    overflow: hidden;
   }
 
   &__body {
