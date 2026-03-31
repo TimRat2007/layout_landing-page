@@ -1,33 +1,39 @@
 .contacts {
-  @include page-grid;
-
-  &__text {
-    grid-column: 1 / -1;
-
-    @include on-desktop {
-      grid-column: 8 / 12;
-    }
-  }
-  &__title {
-    grid-column: 1 / -1;
-  }
-
   &__content {
-    grid-column: 1 / -1;
+    @include page-grid;
 
-    @include on-tablet {
-      grid-column: 1 / 4;
+    &-text {
+      margin-top: 48px;
+      grid-column: 1 / -1;
+
+      @include on-tablet {
+        margin-top: 0;
+        grid-column: 8 / 12;
+      }
+
+      @include on-desktop {
+        grid-column: 9 / 12;
+      }
     }
 
-    @include on-desktop {
-      grid-column: span 5;
+    &__title {
+      grid-column: 1 / -1;
     }
   }
 
   &__form {
+    grid-column: 1 / -1;
+    
+    @include on-tablet {
+      grid-column: 1 / 8;
+    }
+
+    @include on-desktop {
+      grid-column: 1 / 6;
+    }
+
     display: grid;
     row-gap: 20px;
-
     &__button {
       font-family: inherit;
       height: 56px;
