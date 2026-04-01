@@ -249,18 +249,21 @@
             type="text"
             class="contacts__form__fill"
             placeholder="Name"
+            aria-label="Name"
             required>
 
             <input
-            type=" email"
+            type="email"
             class="contacts__form__fill"
             placeholder="Email"
+            aria-label="Email"
             required>
 
             <textarea
-            class=" contacts__form__fill--textarea"
-            placeholder="Message">
-            </textarea>
+            class="contacts__form__fill contacts__form__fill--textarea"
+            rows="6"
+            aria-label="Message"
+            placeholder="Message"></textarea>
 
             <button class="contacts__form__button" type="submit">Send</button>
           </form>
