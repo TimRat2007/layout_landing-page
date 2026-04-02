@@ -1,17 +1,18 @@
 .menu {
-  padding: 24px 20px 88px;
+  padding: 24px 32px 88px;
   box-sizing: border-box;
   height: 100vh;
   background-color: #c2c2c2;
   font-weight: 600;
   text-transform: uppercase;
 
+
   @include on-tablet {
-    padding: 36px 72px;
+    padding: 60px 110px;
   }
 
   @include on-desktop {
-    padding: 36px 120px;
+    padding: 60px 160px;
   }
 
   &__nav {
