@@ -1,7 +1,11 @@
 .footer {
   position: sticky;
+  bottom: 0;
   z-index: -1;
   height: 200px;
+  background-image: url(/images/futter.png);
+  background-size: cover;
+  background-position: center top;
 
   @include on-tablet {
     height: 480px;
@@ -10,10 +14,5 @@
   @include on-desktop {
     height: 555px;
   }
-  &__image {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-  }
+
 }
