@@ -1,5 +1,5 @@
 .menu {
-  padding: 24px 32px 88px;
+  padding: 24px 20px 88px;
   box-sizing: border-box;
   height: 100vh;
   background-color: #e5e5e5;
@@ -8,11 +8,11 @@
   overflow: auto;
 
   @include on-tablet {
-    padding: 60px 110px;
+    padding: 36px 72px;
   }
 
   @include on-desktop {
-    padding: 60px 160px;
+    padding: 36px 120px;
   }
 
   &__nav {
@@ -23,7 +23,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-     position: sticky; /* to keep cross always visible */
+    position: sticky;
     top: 0;
     z-index: 1;
     background-color: #e5e5e5;

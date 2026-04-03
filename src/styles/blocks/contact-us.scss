@@ -16,6 +16,20 @@
       }
     }
 
+    &-text__phone {
+      text-decoration: none;
+      color: inherit;
+    }
+    &-text__email {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    &-text__address {
+      text-decoration: none;
+      color: inherit;
+    }
+
     &__title {
       grid-column: 1 / -1;
     }
