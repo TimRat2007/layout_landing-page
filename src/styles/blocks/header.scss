@@ -10,6 +10,14 @@
   flex-direction: column;
   justify-content: space-between;
 
+   @include on-tablet {
+      padding: 36px 72px;
+    }
+
+    @include on-desktop {
+      padding: 36px 120px;
+    }
+
   @include on-tablet {
     height: 628px;
     background-size: cover;
@@ -24,13 +32,7 @@
     justify-content: space-between;
     align-items: center;
 
-    @include on-tablet {
-      padding: 36px 72px;
-    }
 
-    @include on-desktop {
-      padding: 36px 120px;
-    }
   }
   &__top-logo-link {
     display: flex;

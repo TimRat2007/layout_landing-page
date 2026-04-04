@@ -61,14 +61,13 @@
   white-space: nowrap;
 }
 
-@include on-desktop {
-  .phone-box:hover .phone__link-container {
-    width: auto;
-  }
+@include on-desktop{
+.phone-box:hover .phone__link-container {
+  width: auto;
+}
 
-  .phone-box:hover .phone__link {
-    opacity: 1;
-
-    transform: translate(0);
-  }
+.phone-box:hover .phone__link {
+  opacity: 1;
+  transform: translate(0);
+}
 }
